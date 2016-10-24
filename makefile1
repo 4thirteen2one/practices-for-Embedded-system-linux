@@ -1,0 +1,8 @@
+OBJS = ex_sum.o mysum.o
+CC = gcc
+sum:$(OBJS)
+	$(CC) $(OBJS) -o sum
+ex_sum.o:ex_sum.c
+	$(CC) -c ex_sum.c
+mysum.o:mysum.c mysum.h
+	$(CC) -c mysum.c

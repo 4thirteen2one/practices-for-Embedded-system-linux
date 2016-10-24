@@ -1,0 +1,6 @@
+sum:ex_sum.o mysum.o
+	gcc ex_sum.o mysum.o -o sum
+ex_sum.o:ex_sum.c
+	gcc -c ex_sum.c
+mysum.o:mysum.c mysum.h
+	gcc -c mysum.c

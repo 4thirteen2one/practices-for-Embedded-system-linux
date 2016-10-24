@@ -1,0 +1,8 @@
+OBJS = ex_sum.o mysum.o
+CC = gcc
+sum:$(OBJS)
+	$(CC) $^ -o $@
+ex_sum.o:ex_sum.c
+	$(CC) -c $< -o $@
+mysum.o:mysum.c mysum.h
+	$(CC) -c $< -o $@

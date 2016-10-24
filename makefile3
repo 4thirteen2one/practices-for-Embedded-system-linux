@@ -1,0 +1,5 @@
+OBJS = ex_sum.o mysum.o
+CC = gcc
+sum:$(OBJS)
+	$(CC) $^ -o $@
+
